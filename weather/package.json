@@ -23,7 +23,7 @@
     "eslint:fix": "npm run eslint -- --fix",
     "pretest": "npm run clean && npm run build",
     "posttest": "npm run lint",
-      "migrate": "node ./dist/migrate",
+    "migrate": "node ./dist/migrate",
     "start": "npm run build && node .",
     "prepare": "npm run build"
   },
@@ -47,7 +47,8 @@
     "@loopback/openapi-v3": "^1.6.4",
     "@loopback/repository": "^1.8.1",
     "@loopback/rest": "^1.16.2",
-    "@loopback/rest-explorer": "^1.2.4"
+    "@loopback/rest-explorer": "^1.2.4",
+    "loopback-connector-mongodb": "^4.2.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.3",
@@ -61,6 +62,6 @@
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-eslint-plugin": "^2.1.0",
     "eslint-plugin-mocha": "^5.3.0",
-      "typescript": "~3.5.2"
+    "typescript": "~3.5.2"
   }
 }

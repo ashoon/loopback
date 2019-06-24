@@ -1,0 +1,11 @@
+{
+  "name": "arnoldsMongoDB",
+  "connector": "mongodb",
+  "url": "mongodb+srv://ashoon:sc315860@arnoldsdemocluster-d7pax.gcp.mongodb.net/sample_weatherdata",
+  "host": "",
+  "port": 0,
+  "user": "",
+  "password": "",
+  "database": "sample_weatherdata",
+  "useNewUrlParser": true
+}
