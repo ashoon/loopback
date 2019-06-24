@@ -5,6 +5,7 @@ import {Entity, model, property} from '@loopback/repository';
       collection: 'data',
     },
   }})
+  
 export class WeatherModel extends Entity {
   @property({
     type: 'string',
@@ -12,7 +13,6 @@ export class WeatherModel extends Entity {
     required: true,
   })
   _id: string;
-
 
   constructor(data?: Partial<WeatherModel>) {
     super(data);
