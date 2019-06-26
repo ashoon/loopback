@@ -14,6 +14,13 @@ export class WeatherModel extends Entity {
   })
   _id: string;
 
+  @property({
+    type: 'number',
+    id: false,
+    required: true,
+  })
+  elevation: number;
+
   constructor(data?: Partial<WeatherModel>) {
     super(data);
   }
