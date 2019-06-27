@@ -17,9 +17,13 @@ export class WeatherModel extends Entity {
   @property({
     type: 'number',
     id: false,
-    required: true,
+    required: false,
   })
   elevation: number;
+
+  // Indexer property to allow additional data
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [prop: string]: any;
 
   constructor(data?: Partial<WeatherModel>) {
     super(data);
